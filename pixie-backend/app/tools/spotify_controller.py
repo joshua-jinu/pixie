@@ -1,11 +1,6 @@
 from langchain_core.tools import tool
 
 @tool
-async def summarize(url: str) -> str:
-    """Summarizes the content of a web page given its URL."""
-    return f"Summarized content of {url}"
-
-@tool
 async def spotify_controller(action: str, **kwargs) -> str:
     """Controls Spotify playback. Action can be 'play', 'pause', or 'next'."""
     if action == "play":

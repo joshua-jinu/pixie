@@ -1,7 +1,7 @@
 import uuid
 from fastapi import APIRouter, HTTPException
-from schemas import ChatInput
-from services.agent import agent
+from app.utils.schemas import ChatInput
+from app.agent.agent import agent
 
 router = APIRouter()
 

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.health import router as health_router
-from api.chat import router as chat_router
+from app.api.health import router as health_router
+from app.api.chat import router as chat_router
 
 app = FastAPI(
     title="Pixie",

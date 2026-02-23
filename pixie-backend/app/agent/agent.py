@@ -5,8 +5,9 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.store.memory import InMemoryStore
 from langchain.agents import create_agent
 
-from services.system_prompt import SYSTEM_PROMPT
-from services.tools import summarize, spotify_controller
+from app.tools.summarize import summarize
+from app.tools.spotify_controller import spotify_controller
+from app.agent.system_prompt import SYSTEM_PROMPT
 
 load_dotenv()
 

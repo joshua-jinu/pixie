@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Optional, Dict, Literal, List
+from typing import Optional
 
 class ChatInput(BaseModel):
     query: str
